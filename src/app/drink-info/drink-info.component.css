@@ -1,0 +1,26 @@
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  font-size: 100%;
+}
+
+.drink-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  margin: 10% 10% 10% 10%;
+  border: solid 1px black;
+  padding: 5%;
+}
+
+.drink-pic {
+  grid-row: 1 / span 3;
+  grid-column: 2 / span 1;
+  text-align: center;
+}
