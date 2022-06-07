@@ -13,8 +13,9 @@ export class AppComponent implements OnInit{
   constructor(private drinkService: DrinkService) {}
 
   ngOnInit(): void {
-      this.drinkService.fetchDrinks().subscribe(drinks => {
-        this.drinks = drinks
+      this.drinkService.fetchDrinks().subscribe(response => {
+        this.drinks = response.drinks
+        console.log(response)
       });
   }
 

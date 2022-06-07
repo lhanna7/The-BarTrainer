@@ -1,7 +1,7 @@
 export type Drink = {
-  name: string;
-  ingredients: string;
-  glass: string;
-  instructions: string;
-  image: string;
+  strDrink: string;
+  strIngredient1: string;
+  strGlass: string;
+  strInstructions: string;
+  strDrinkThumb: string;
 }

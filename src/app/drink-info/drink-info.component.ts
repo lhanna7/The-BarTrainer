@@ -6,11 +6,10 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./drink-info.component.css']
 })
 export class DrinkInfoComponent {
-  @Input() name!: string;
-  @Input() ingredients!: string;
-  @Input() glass!: string;
-  @Input() instructions!: string;
-  @Input() image!: string;
-
+  @Input() strDrink!: string;
+  @Input() strIngredient1!: string;
+  @Input() strGlass!: string;
+  @Input() strInstructions!: string;
+  @Input() strDrinkThumb!: string;
   }
 
