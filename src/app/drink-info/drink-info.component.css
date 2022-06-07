@@ -15,7 +15,7 @@ p {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto;
   margin: 10% 10% 10% 10%;
-  border: solid 1px black;
+  border: solid 1px white;
   padding: 5%;
 }
 
