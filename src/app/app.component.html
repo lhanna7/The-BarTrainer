@@ -1,23 +1,16 @@
 <body>
-  <header>
-    <img class="logo" src="https://i2.paste.pics/eff613d823330d1315eed2c597a07d84.png" alt="The BarTrainer">
-  </header>
+  <app-navigation></app-navigation>
 
-  <form>
-    <label for="drink-name">Drink name:</label>
-    <input type="text" name="drink-name" id="drink-name">
-    <input type="submit" name="submit" id="submit">
-  </form>
-
-<ul>
-  <li *ngFor="let drink of drinks">
-    <app-drink-info
-    [strDrink]="drink.strDrink"
-    [strIngredient1]="drink.strIngredient1"
-    [strGlass]="drink.strGlass"
-    [strInstructions]="drink.strInstructions"
-    [strDrinkThumb]="drink.strDrinkThumb"
-    ></app-drink-info>
-  </li>
-</ul>
+  <ul>
+    <app-search-drink></app-search-drink>
+    <li *ngFor="let drink of drinks">
+      <app-drink-info
+      [strDrink]="drink.strDrink"
+      [strIngredient1]="drink.strIngredient1"
+      [strGlass]="drink.strGlass"
+      [strInstructions]="drink.strInstructions"
+      [strDrinkThumb]="drink.strDrinkThumb"
+      ></app-drink-info>
+    </li>
+  </ul>
 </body>

@@ -1,0 +1,28 @@
+.logo {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+  text-align: center;
+}
+
+li {
+  background-color: rgb(38,38,38);
+  padding: 5% 0% 5% 0%;
+}
+
+a {
+  text-decoration: none;
+  background-color: rgb(38,38,38);
+}
+
+.navigation-bar {
+  position: fixed;
+  height: 100%;
+  width: 22%;
+  background-color: rgb(38, 38, 38);
+  top: 0;
+  left: 0;
+}

@@ -15,7 +15,6 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
       this.drinkService.fetchDrinks().subscribe(response => {
         this.drinks = response.drinks
-        console.log(response)
       });
   }
 
