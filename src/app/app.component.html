@@ -1,16 +1,6 @@
 <body>
   <app-navigation></app-navigation>
 
-  <ul>
-    <app-search-drink></app-search-drink>
-    <li *ngFor="let drink of drinks">
-      <app-drink-info
-      [strDrink]="drink.strDrink"
-      [strIngredient1]="drink.strIngredient1"
-      [strGlass]="drink.strGlass"
-      [strInstructions]="drink.strInstructions"
-      [strDrinkThumb]="drink.strDrinkThumb"
-      ></app-drink-info>
-    </li>
-  </ul>
+  <router-outlet></router-outlet>
+
 </body>

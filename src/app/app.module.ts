@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { DrinkInfoComponent } from './drink-info/drink-info.component';
 import { SearchDrinkComponent } from './search-drink/search-drink.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DrinkInfoComponent,
     SearchDrinkComponent,
-    NavigationComponent
+    NavigationComponent,
+    SearchResultsComponent
   ],
   imports: [
     BrowserModule,
