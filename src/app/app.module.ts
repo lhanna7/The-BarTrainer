@@ -9,6 +9,9 @@ import { DrinkInfoComponent } from './drink-info/drink-info.component';
 import { SearchDrinkComponent } from './search-drink/search-drink.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
+import { LandingPageSearchDrinkComponent } from './landing-page-search-drink/landing-page-search-drink.component';
+import { HomeComponent } from './home/home.component';
+import { SpecialsCocktailsComponent } from './specials-cocktails/specials-cocktails.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { SearchResultsComponent } from './search-results/search-results.componen
     DrinkInfoComponent,
     SearchDrinkComponent,
     NavigationComponent,
-    SearchResultsComponent
+    SearchResultsComponent,
+    LandingPageSearchDrinkComponent,
+    HomeComponent,
+    SpecialsCocktailsComponent
   ],
   imports: [
     BrowserModule,
