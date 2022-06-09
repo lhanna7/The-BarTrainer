@@ -1,4 +1,15 @@
 form {
   margin-left: 23%;
   margin-top: 5%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+label {
+  color: rgb(211, 173, 99);
+}
+
+input {
+  color: rgb(211, 173, 99);
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 3% 5% 3% 5%;
 }

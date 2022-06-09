@@ -8,6 +8,19 @@ img {
 
 p {
   font-size: 100%;
+  background-color: rgb(38, 38, 38);
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(211, 173, 99);
+}
+
+h2, h3, span {
+  background-color: rgb(38, 38, 38);
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(211, 173, 99);
+}
+
+strong {
+    background-color: rgb(38, 38, 38);
 }
 
 .drink-info {
@@ -15,8 +28,8 @@ p {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto;
   margin: 5% 10% 10% 20%;
-  border: solid 1px white;
   padding: 5%;
+  background-color: rgb(38, 38, 38);
 }
 
 .drink-pic {

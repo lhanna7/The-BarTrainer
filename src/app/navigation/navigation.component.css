@@ -6,6 +6,7 @@ ul {
   list-style: none;
   padding-left: 0px;
   text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 li {
@@ -16,6 +17,7 @@ li {
 a {
   text-decoration: none;
   background-color: rgb(38,38,38);
+  color: rgb(211, 173, 99);
 }
 
 .navigation-bar {
