@@ -1,12 +1,12 @@
 <app-search-drink></app-search-drink>
 <ul>
-  <li *ngFor="let drink of drinks">
+  <li *ngFor="let result of results">
     <app-drink-info
-    [strDrink]="drink.strDrink"
-    [strIngredient1]="drink.strIngredient1"
-    [strGlass]="drink.strGlass"
-    [strInstructions]="drink.strInstructions"
-    [strDrinkThumb]="drink.strDrinkThumb"
+    [strDrink]="result.strDrink"
+    [strIngredient1]="result.strIngredient1"
+    [strGlass]="result.strGlass"
+    [strInstructions]="result.strInstructions"
+    [strDrinkThumb]="result.strDrinkThumb"
     ></app-drink-info>
   </li>
 </ul>

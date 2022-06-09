@@ -10,14 +10,18 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class SearchResultsComponent {
 
-  drinks: Drink[] = []
+  searchTerm = ""
+  results: Drink[] = []
 
-  constructor(private drinkService: DrinkService) {}
+  constructor(private route: ActivatedRoute, private drinkService: DrinkService) {}
 
-  ngOnInit(): void {
-      this.drinkService.fetchDrinks().subscribe(response => {
-        this.drinks = response.drinks
-      });
+  ngOnInit() {
+      return this.route.queryParams.subscribe(params => {
+        this.searchTerm = params["search"]
+        this.drinkService.search(this.searchTerm).subscribe(response => {
+          this.results = response.drinks
+        })
+      })
   }
 
 }
