@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search-drink',
@@ -7,8 +8,11 @@ import { Component } from '@angular/core';
 })
 export class SearchDrinkComponent {
 
+  constructor(private router: Router) {}
+
   searchDrinks({searchTerm}: { searchTerm: string; }){
     console.log(searchTerm)
+    this.router.navigate([`/search-drink-results`], { queryParams: { search: searchTerm } })
   }
 
 }
