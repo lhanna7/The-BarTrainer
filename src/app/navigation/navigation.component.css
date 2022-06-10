@@ -17,7 +17,12 @@ li {
 a {
   text-decoration: none;
   background-color: rgb(38,38,38);
-  color: rgb(211, 173, 99);
+  color: rgb(146, 146, 146);
+  transition: 0.5s;
+}
+
+a:hover {
+  text-shadow: 0 0 10px rgb(233, 192, 109);
 }
 
 .navigation-bar {

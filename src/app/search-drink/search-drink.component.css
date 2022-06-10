@@ -1,15 +1,47 @@
 form {
+  display: flex;
   margin-left: 23%;
   margin-top: 5%;
   font-family: 'Josefin Sans', sans-serif;
 }
 
 label {
+  display: flex;
   color: rgb(211, 173, 99);
+  align-items: center;
+  font-size: 120%;
+  padding-right: 2%;
+  font-weight: bolder;
 }
 
 input {
+  display: flex;
   color: rgb(211, 173, 99);
   font-family: 'Josefin Sans', sans-serif;
-  padding: 3% 5% 3% 5%;
 }
+
+#search-term {
+  padding: 3% 4% 3% 5%;
+  font-size: 120%;
+}
+
+#submit {
+  font-size: 120%;
+  margin-left: 5%;
+  padding: 0% 7% 0% 7%;
+  cursor: pointer;
+  background-image: radial-gradient(rgb(233, 192, 109), rgb(127, 90, 43));
+  border: solid 1px rgb(88, 62, 27);
+  color: rgb(38, 38, 38);
+  font-weight: bolder;
+}
+
+#submit:hover {
+  background-image: radial-gradient(rgb(127, 90, 43), rgb(233, 192, 109));
+}
+
+::placeholder {
+  text-shadow: 0 0 10px rgb(233, 192, 109);
+}
+
+

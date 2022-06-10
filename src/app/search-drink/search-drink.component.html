@@ -1,5 +1,5 @@
 <form #drinkSearchForm="ngForm" class="drink-search-form" (ngSubmit)="searchDrinks(drinkSearchForm.value)">
   <label for="search-term">Drink Name:</label>
   <input type="search-term" name="searchTerm" id="search-term" placeholder="ex. 'Lemon Drop' " ngModel />
-  <input type="submit" value="Search!" />
+  <input id="submit" type="submit" value="Search!" />
 </form>
