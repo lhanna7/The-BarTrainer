@@ -12,6 +12,7 @@ import { SearchResultsComponent } from './search-results/search-results.componen
 import { LandingPageSearchDrinkComponent } from './landing-page-search-drink/landing-page-search-drink.component';
 import { HomeComponent } from './home/home.component';
 import { SpecialsCocktailsComponent } from './specials-cocktails/specials-cocktails.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SpecialsCocktailsComponent } from './specials-cocktails/specials-cockta
     SearchResultsComponent,
     LandingPageSearchDrinkComponent,
     HomeComponent,
-    SpecialsCocktailsComponent
+    SpecialsCocktailsComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,

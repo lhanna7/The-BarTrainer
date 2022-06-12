@@ -15,6 +15,7 @@ li {
 }
 
 a {
+  font-size: 130%;
   text-decoration: none;
   background-color: rgb(38,38,38);
   color: rgb(146, 146, 146);
@@ -32,4 +33,5 @@ a:hover {
   background-color: rgb(38, 38, 38);
   top: 0;
   left: 0;
+  box-shadow: 8px 15px 15px 5px rgb(0, 0, 0);
 }

@@ -4,6 +4,7 @@ ul {
 
 img {
   width: 100%;
+  margin-left: 8%;
 }
 
 p {
@@ -11,6 +12,7 @@ p {
   background-color: rgb(38, 38, 38);
   font-family: 'Josefin Sans', sans-serif;
   color: rgb(201, 184, 152);
+  font-size: 120%;
 }
 
 h2, h3, span {
@@ -21,6 +23,7 @@ h2, h3, span {
 
 h2 {
   text-align: center;
+  font-size: 200%;
 }
 
 strong {
