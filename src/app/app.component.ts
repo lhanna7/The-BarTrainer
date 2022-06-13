@@ -9,12 +9,16 @@ import { Drink } from './models/Drink';
 })
 export class AppComponent implements OnInit{
   drinks: Drink[] = []
+  rando: Drink[] = []
 
   constructor(private drinkService: DrinkService) {}
 
   ngOnInit(): void {
       this.drinkService.fetchDrinks().subscribe(response => {
         this.drinks = response.drinks
+      });
+      this.drinkService.fetchRandom().subscribe(response => {
+        this.rando = response.drinks
       });
   }
 

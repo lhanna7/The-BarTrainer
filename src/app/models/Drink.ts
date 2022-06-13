@@ -34,3 +34,26 @@ export type Drink = {
   strInstructions: string;
   strDrinkThumb: string;
 }
+
+export type Special = {
+  id: number;
+  name: string;
+  glass: string;
+  method: string;
+  ingredient1: string;
+  ingredient2: string;
+  ingredient3: string;
+  ingredient4: string;
+  ingredient5: string;
+  ingredient6: string;
+  topper: string;
+  instruction1: string;
+  instruction2: string;
+  instruction3: string;
+  instruction4: string;
+  instruction5: string;
+  instruction6: string;
+  instruction7: string;
+  garnish: string;
+  imageurl: string;
+}

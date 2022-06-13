@@ -13,6 +13,8 @@ import { LandingPageSearchDrinkComponent } from './landing-page-search-drink/lan
 import { HomeComponent } from './home/home.component';
 import { SpecialsCocktailsComponent } from './specials-cocktails/specials-cocktails.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { RandomDrinkComponent } from './random-drink/random-drink.component';
+import { RandomDrinkResultsComponent } from './random-drink-results/random-drink-results.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     LandingPageSearchDrinkComponent,
     HomeComponent,
     SpecialsCocktailsComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    RandomDrinkComponent,
+    RandomDrinkResultsComponent
   ],
   imports: [
     BrowserModule,

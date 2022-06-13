@@ -5,6 +5,7 @@ import { LandingPageSearchDrinkComponent } from './landing-page-search-drink/lan
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { SpecialsCocktailsComponent } from './specials-cocktails/specials-cocktails.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { RandomDrinkComponent } from './random-drink/random-drink.component';
 
 const routes: Routes = [{
   path: "",
@@ -18,6 +19,9 @@ const routes: Routes = [{
 },{
   path: "view-specials",
   component: SpecialsCocktailsComponent
+},{
+  path: "generate-random",
+  component: RandomDrinkComponent
 },{
   path: "404",
   component: PagenotfoundComponent

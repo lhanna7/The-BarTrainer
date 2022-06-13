@@ -1,0 +1,17 @@
+.drink-info, button {
+  margin-left: 50%;
+}
+
+button {
+  font-size: 120%;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 8%;
+  padding: 3% 8% 3% 8%;
+  cursor: pointer;
+  background-image: radial-gradient(rgb(233, 192, 109), rgb(127, 90, 43));
+  border: solid 1px rgb(88, 62, 27);
+  color: rgb(38, 38, 38);
+  font-weight: bolder;
+  box-shadow: 8px 15px 15px 5px rgb(0, 0, 0);
+  transition: 1s;
+}
