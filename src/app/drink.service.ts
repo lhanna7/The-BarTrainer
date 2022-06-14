@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Drink, Special } from './models/Drink';
 import { HttpClient } from '@angular/common/http';
+import { map, Observable } from 'rxjs';
 
 type DrinkResponse = {
   drinks: Drink[];
 }
 
-type SpecialResponse = {
+export type SpecialResponse = {
   drinks: Special[]
 }
 
@@ -22,6 +23,13 @@ search(searchTerm: string) {
 
 fetchSpecials() {
   return this.http.get<SpecialResponse>(`https://bartrainer-cocktails.herokuapp.com/api/drinks`)
+}
+
+fetchSpecialsByName(name: string): Observable<Special | undefined> {
+  return this.fetchSpecials().pipe(
+    map((response) => response.drinks
+    .find((drink) => drink.name === name))
+  )
 }
 
 // fetchRandom() {

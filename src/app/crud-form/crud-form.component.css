@@ -1,0 +1,30 @@
+.crud-bar {
+  position: fixed;
+  height: 100%;
+  width: 22%;
+  background-color: rgb(38, 38, 38);
+  top: 0;
+  right: 0;
+  box-shadow: 8px 15px 15px 20px rgb(0, 0, 0);
+}
+
+form {
+  margin-top: 10%;
+  background-color: rgb(38, 38, 38);
+  text-align: center;
+}
+
+input {
+  height: fit-content;
+  margin-top: 4%;
+  padding: 3%;
+  border-top: solid 1px rgb(233, 192, 109);
+  border-left: solid 1px rgb(233, 192, 109);
+  border-right: solid 1px rgb(127, 90, 43);
+  border-bottom: solid 1px rgb(127, 90, 43);
+  text-align: center;
+}
+
+::placeholder {
+  text-align: center;
+}

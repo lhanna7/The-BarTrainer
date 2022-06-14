@@ -7,6 +7,7 @@ import { SpecialsCocktailsComponent } from './specials-cocktails/specials-cockta
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { RandomDrinkComponent } from './random-drink/random-drink.component';
 import { WineListComponent } from './wine-list/wine-list.component';
+import { SpecialsResultsComponent } from './specials-results/specials-results.component';
 
 const routes: Routes = [{
   path: "",
@@ -20,6 +21,9 @@ const routes: Routes = [{
 },{
   path: "view-specials",
   component: SpecialsCocktailsComponent
+},{
+  path: "view-specials/:name",
+  component: SpecialsResultsComponent
 },{
   path: "generate-random",
   component: RandomDrinkComponent

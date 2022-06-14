@@ -7,12 +7,20 @@ img {
   margin-left: 8%;
 }
 
-p {
+ul {
+    background-color: rgb(38, 38, 38);
+}
+
+p, li {
   font-size: 100%;
   background-color: rgb(38, 38, 38);
   font-family: 'Josefin Sans', sans-serif;
   color: rgb(201, 184, 152);
   font-size: 120%;
+}
+
+p {
+  margin-left: 8%;
 }
 
 h2, h3, span {

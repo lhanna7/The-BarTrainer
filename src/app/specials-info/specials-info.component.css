@@ -1,0 +1,73 @@
+* {
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(211, 173, 99);
+}
+
+img {
+  width: 80%;
+  border-radius: 5%;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+a {
+  background-color: rgb(39, 39, 39);
+  padding: 2%;
+  text-decoration: none;
+}
+
+.button {
+  margin: 5% 0% 0% 30%;
+  font-size: 110%;
+  font-weight: bolder;
+}
+
+.specials-info {
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 10%;
+  padding-left: 5%;
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-rows: 1fr auto;
+  background-color: rgb(38, 38, 38);
+  border-radius: 5%;
+}
+
+.instructions {
+  font-size: 120%;
+  grid-row: 2 / span 2;
+  grid-column: 2 / span 1;
+  background-color: rgb(38, 38, 38);
+  border-radius: 5%;
+}
+
+.ingredient {
+  font-size: 120%;
+  background-color: rgb(38, 38, 38);
+  border-radius: 5%;
+  padding-top: 10%;
+}
+
+
+.img-container, ul, strong, h3 {
+  background-color: rgb(38, 38, 38);
+}
+
+.img-container {
+  padding-top: 10%;
+}
+
+h2 {
+  margin-left: 10%;
+  background-color: rgb(38, 38, 38);
+}
+
+li {
+  padding-top: 1%;
+  list-style: none;
+  background-color: rgb(38, 38, 38);
+}
+

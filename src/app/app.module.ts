@@ -16,6 +16,9 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { RandomDrinkComponent } from './random-drink/random-drink.component';
 import { RandomDrinkResultsComponent } from './random-drink-results/random-drink-results.component';
 import { WineListComponent } from './wine-list/wine-list.component';
+import { SpecialsResultsComponent } from './specials-results/specials-results.component';
+import { SpecialsInfoComponent } from './specials-info/specials-info.component';
+import { CrudFormComponent } from './crud-form/crud-form.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +34,9 @@ import { WineListComponent } from './wine-list/wine-list.component';
     RandomDrinkComponent,
     RandomDrinkResultsComponent,
     WineListComponent,
+    SpecialsResultsComponent,
+    SpecialsInfoComponent,
+    CrudFormComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,10 @@
   <div *ngFor="let result of results" class="drinks">
     <a routerLink="/view-specials/{{result.name}}">
-      <img src="{{result.imageurl}}" alt="Special Picture">
-      <figcaption>{{result.name}}</figcaption>
+      <h2>{{result.name}}</h2>
     </a>
+  </div>
+
+  <div>
+    <app-crud-form></app-crud-form>
   </div>
 
