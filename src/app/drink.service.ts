@@ -16,10 +16,6 @@ type SpecialResponse = {
 export class DrinkService {
 constructor(private http: HttpClient) {}
 
-fetchDrinks() {
-  return this.http.get<DrinkResponse>(`https://www.thecocktaildb.com/api/json/v2/9973533/search.php?s=margarita`)
-}
-
 search(searchTerm: string) {
   return this.http.get<DrinkResponse>(`https://www.thecocktaildb.com/api/json/v2/9973533/search.php?s=${searchTerm}`)
 }
@@ -28,8 +24,8 @@ fetchSpecials() {
   return this.http.get<SpecialResponse>(`https://bartrainer-cocktails.herokuapp.com/api/drinks`)
 }
 
-fetchRandom() {
-  return this.http.get<DrinkResponse>(`www.thecocktaildb.com/api/json/v1/1/random.php`)
-}
+// fetchRandom() {
+//   return this.http.get<DrinkResponse>(`www.thecocktaildb.com/api/json/v2/9973533/random.php`)
+// }
 }
 

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { LandingPageSearchDrinkComponent } from './landing-page-search-drink/landing-page-search-drink.component';
@@ -6,6 +6,7 @@ import { SearchResultsComponent } from './search-results/search-results.componen
 import { SpecialsCocktailsComponent } from './specials-cocktails/specials-cocktails.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { RandomDrinkComponent } from './random-drink/random-drink.component';
+import { WineListComponent } from './wine-list/wine-list.component';
 
 const routes: Routes = [{
   path: "",
@@ -22,6 +23,9 @@ const routes: Routes = [{
 },{
   path: "generate-random",
   component: RandomDrinkComponent
+},{
+  path: "wine-list",
+  component: WineListComponent
 },{
   path: "404",
   component: PagenotfoundComponent

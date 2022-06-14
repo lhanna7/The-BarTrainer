@@ -15,6 +15,7 @@ import { SpecialsCocktailsComponent } from './specials-cocktails/specials-cockta
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { RandomDrinkComponent } from './random-drink/random-drink.component';
 import { RandomDrinkResultsComponent } from './random-drink-results/random-drink-results.component';
+import { WineListComponent } from './wine-list/wine-list.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { RandomDrinkResultsComponent } from './random-drink-results/random-drink
     SpecialsCocktailsComponent,
     PagenotfoundComponent,
     RandomDrinkComponent,
-    RandomDrinkResultsComponent
+    RandomDrinkResultsComponent,
+    WineListComponent,
   ],
   imports: [
     BrowserModule,

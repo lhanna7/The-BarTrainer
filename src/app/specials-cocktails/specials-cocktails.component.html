@@ -1,9 +1,7 @@
-<ul>
-  <li class="drink-container">
-      <img src="../../assets/drinkspec1.jpg" alt="Special Cocktail">
-      <h2>Perfect Margarita</h2>
-      <p>Ingredients?</p>
-      <p>Instructions?</p>
-      <input type="submit" value="Out of Stock">
-  </li>
-</ul>
+  <div *ngFor="let result of results" class="drinks">
+    <a routerLink="/view-specials/{{result.name}}">
+      <img src="{{result.imageurl}}" alt="Special Picture">
+      <figcaption>{{result.name}}</figcaption>
+    </a>
+  </div>
+
