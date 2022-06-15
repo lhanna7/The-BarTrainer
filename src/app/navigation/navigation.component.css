@@ -2,6 +2,12 @@
   width: 100%;
 }
 
+@media only screen and (max-width: 700px) {
+  .logo {
+    width: 100%;
+  }
+}
+
 ul {
   list-style: none;
   padding-left: 0px;
@@ -9,10 +15,27 @@ ul {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+@media only screen and (max-width: 700px) {
+  ul {
+    display: flex;
+    align-items: center;
+    font-size: 60%;
+    background-color: rgb(38, 38, 38);
+  }
+}
+
 li {
   background-color: rgb(38,38,38);
   padding: 5% 0% 5% 0%;
 }
+
+@media only screen and (max-width: 700px) {
+  li{
+  padding: 0%;
+  width: 100%;
+  }
+}
+
 
 a {
   font-size: 130%;
@@ -21,6 +44,7 @@ a {
   color: rgb(146, 146, 146);
   transition: 0.5s;
 }
+
 
 a:hover {
   text-shadow: 0 0 10px rgb(233, 192, 109);
@@ -34,4 +58,12 @@ a:hover {
   top: 0;
   left: 0;
   box-shadow: 8px 15px 15px 5px rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 700px) {
+  .navigation-bar {
+    position: fixed;
+    height: 10%;
+    width: 100%;
+  }
 }

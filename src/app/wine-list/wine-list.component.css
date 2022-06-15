@@ -4,6 +4,12 @@ div{
   margin-top: 4%;
 }
 
+@media only screen and (max-width: 700px) {
+  div {
+    margin-top: 35%;
+  }
+}
+
 h2, p {
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
@@ -14,7 +20,19 @@ h2 {
   color: rgb(139, 113, 62);
 }
 
+@media only screen and (max-width: 700px) {
+  h2 {
+    font-size: 200%;
+  }
+}
+
 p {
   font-size: 160%;
   color: rgb(241, 206, 135);
+}
+
+@media only screen and (max-width: 700px) {
+  p {
+    font-size: 120%;
+  }
 }

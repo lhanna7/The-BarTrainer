@@ -14,3 +14,10 @@ p {
   color: rgb(139, 139, 139);
   text-shadow: 0 0 10px rgb(233, 192, 109)
 }
+
+@media only screen and (max-width: 700px) {
+  p, h3 {
+    margin-left: 0%;
+    font-size: 100%;
+  }
+}

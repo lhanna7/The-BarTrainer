@@ -9,6 +9,12 @@
   font-weight: bolder;
 }
 
+@media only screen and (max-width: 700px) {
+  .drinks {
+    text-align: center;
+  }
+}
+
 h2 {
   display: flex;
   align-items: center;
@@ -18,6 +24,12 @@ h2 {
   box-shadow: 8px 15px 15px 5px rgb(0, 0, 0);
   color: rgb(211, 173, 99);
   transition: 1s;
+}
+
+@media only screen and (max-width: 700px) {
+  .drinks, a, h2 {
+    margin-left: 0%;
+  }
 }
 
 h2:hover {
