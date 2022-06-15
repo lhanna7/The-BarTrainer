@@ -32,8 +32,8 @@ fetchSpecialsByName(name: string): Observable<Special | undefined> {
   )
 }
 
-// fetchRandom() {
-//   return this.http.get<DrinkResponse>(`www.thecocktaildb.com/api/json/v2/9973533/random.php`)
-// }
+fetchRandom() {
+  return this.http.get<DrinkResponse>(`https://www.thecocktaildb.com/api/json/v2/9973533/random.php`)
+}
 }
 

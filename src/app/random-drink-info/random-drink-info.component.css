@@ -1,0 +1,67 @@
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  margin-left: 8%;
+}
+
+ul {
+  background-color: rgb(38, 38, 38);
+}
+
+p,
+li {
+  font-size: 100%;
+  background-color: rgb(38, 38, 38);
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(201, 184, 152);
+  font-size: 120%;
+}
+
+p {
+  margin-left: 8%;
+}
+
+h2,
+h3,
+span {
+  background-color: rgb(38, 38, 38);
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(211, 173, 99);
+}
+
+h2 {
+  text-align: center;
+  font-size: 200%;
+}
+
+strong {
+  background-color: rgb(38, 38, 38);
+  margin-bottom: 4%;
+  display: block;
+  color: rgb(211, 173, 99);
+}
+
+.drink-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  margin: 5% 10% 10% 27%;
+  padding: 5%;
+  background-color: rgb(38, 38, 38);
+  border-radius: 3%;
+  box-shadow: 8px 15px 15px 5px rgb(0, 0, 0);
+  transition: 2s;
+}
+
+.drink-info:hover {
+  box-shadow: 8px 15px 15px 5px rgb(211, 173, 99);
+}
+
+.drink-pic {
+  grid-row: 1 / span 3;
+  grid-column: 2 / span 1;
+  text-align: center;
+}

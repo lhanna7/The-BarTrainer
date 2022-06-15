@@ -1,3 +1,41 @@
 <button>Generate</button>
-
-<router-outlet></router-outlet>
+<ul>
+  <li *ngFor="let result of results">
+<app-random-drink-info
+    [strDrink]="result.strDrink"
+    [strIngredient1]="result.strIngredient1"
+    [strIngredient2]="result.strIngredient2"
+    [strIngredient3]="result.strIngredient3"
+    [strIngredient4]="result.strIngredient4"
+    [strIngredient5]="result.strIngredient5"
+    [strIngredient6]="result.strIngredient6"
+    [strIngredient7]="result.strIngredient7"
+    [strIngredient8]="result.strIngredient8"
+    [strIngredient9]="result.strIngredient9"
+    [strIngredient10]="result.strIngredient10"
+    [strIngredient11]="result.strIngredient11"
+    [strIngredient12]="result.strIngredient12"
+    [strIngredient13]="result.strIngredient13"
+    [strIngredient14]="result.strIngredient14"
+    [strIngredient15]="result.strIngredient15"
+    [strMeasure1]="result.strMeasure1"
+    [strMeasure2]="result.strMeasure2"
+    [strMeasure3]="result.strMeasure3"
+    [strMeasure4]="result.strMeasure4"
+    [strMeasure5]="result.strMeasure5"
+    [strMeasure6]="result.strMeasure6"
+    [strMeasure7]="result.strMeasure7"
+    [strMeasure8]="result.strMeasure8"
+    [strMeasure9]="result.strMeasure9"
+    [strMeasure10]="result.strMeasure10"
+    [strMeasure11]="result.strMeasure11"
+    [strMeasure12]="result.strMeasure12"
+    [strMeasure13]="result.strMeasure13"
+    [strMeasure14]="result.strMeasure14"
+    [strMeasure15]="result.strMeasure15"
+    [strGlass]="result.strGlass"
+    [strInstructions]="result.strInstructions"
+    [strDrinkThumb]="result.strDrinkThumb"
+></app-random-drink-info>
+  </li>
+</ul>

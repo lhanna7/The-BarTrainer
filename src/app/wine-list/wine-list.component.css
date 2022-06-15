@@ -1,11 +1,20 @@
 div{
   display: flex;
   flex-direction: column;
-  margin-left: 30%;
   margin-top: 4%;
 }
 
-h2 {
+h2, p {
   font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 260%;
+  color: rgb(139, 113, 62);
+}
+
+p {
+  font-size: 160%;
   color: rgb(241, 206, 135);
 }

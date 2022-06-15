@@ -14,11 +14,12 @@ import { HomeComponent } from './home/home.component';
 import { SpecialsCocktailsComponent } from './specials-cocktails/specials-cocktails.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { RandomDrinkComponent } from './random-drink/random-drink.component';
-import { RandomDrinkResultsComponent } from './random-drink-results/random-drink-results.component';
 import { WineListComponent } from './wine-list/wine-list.component';
 import { SpecialsResultsComponent } from './specials-results/specials-results.component';
 import { SpecialsInfoComponent } from './specials-info/specials-info.component';
 import { CrudFormComponent } from './crud-form/crud-form.component';
+import { BeerListComponent } from './beer-list/beer-list.component';
+import { RandomDrinkInfoComponent } from './random-drink-info/random-drink-info.component';
 
 @NgModule({
   declarations: [
@@ -32,11 +33,12 @@ import { CrudFormComponent } from './crud-form/crud-form.component';
     SpecialsCocktailsComponent,
     PagenotfoundComponent,
     RandomDrinkComponent,
-    RandomDrinkResultsComponent,
     WineListComponent,
     SpecialsResultsComponent,
     SpecialsInfoComponent,
     CrudFormComponent,
+    BeerListComponent,
+    RandomDrinkInfoComponent,
   ],
   imports: [
     BrowserModule,
