@@ -1,21 +1,49 @@
+<div class="button">
+  <a routerLink="/view-specials">Back</a>
+  <button *ngIf="!edit" (click)="toggleEditVisibility()">Edit</button>
+</div>
+
+<form *ngIf="edit" #editSpecialForm="ngForm" (ngSubmit)="editSpecial()">
+  <input [(ngModel)]="name" type="text" name="name" id="name" placeholder="Name:">
+  <input [(ngModel)]="special!.glass" type="text" name="glass" id="glass" placeholder="Glass:">
+  <input [(ngModel)]="special!.method" type="text" name="method" id="method" placeholder="Method:">
+  <input [(ngModel)]="special!.ingredient1" type="text" name="ingredient1" id="ingredient1" placeholder="Ingredient 1:">
+  <input [(ngModel)]="special!.ingredient2" type="text" name="ingredient2" id="ingredient2" placeholder="Ingredient 2:">
+  <input [(ngModel)]="special!.ingredient3" type="text" name="ingredient3" id="ingredient3" placeholder="Ingredient 3:">
+  <input [(ngModel)]="special!.ingredient4" type="text" name="ingredient4" id="ingredient4" placeholder="Ingredient 4:">
+  <input [(ngModel)]="special!.ingredient5" type="text" name="ingredient5" id="ingredient5" placeholder="Ingredient 5:">
+  <input [(ngModel)]="special!.ingredient6" type="text" name="ingredient6" id="ingredient6" placeholder="Ingredient 6:">
+  <input [(ngModel)]="special!.topper" type="text" name="topper" id="topper" placeholder="Top With:">
+  <input [(ngModel)]="special!.instruction1" type="text" name="instruction1" id="instruction1" placeholder="Instruction 1:">
+  <input [(ngModel)]="special!.instruction2" type="text" name="instruction2" id="instruction2" placeholder="Instruction 2:">
+  <input [(ngModel)]="special!.instruction3" type="text" name="instruction3" id="instruction3" placeholder="Instruction 3:">
+  <input [(ngModel)]="special!.instruction4" type="text" name="instruction4" id="instruction4" placeholder="Instruction 4:">
+  <input [(ngModel)]="special!.instruction5" type="text" name="instruction5" id="instruction5" placeholder="Instruction 5:">
+  <input [(ngModel)]="special!.instruction6" type="text" name="instruction6" id="instruction6" placeholder="Instruction 6:">
+  <input [(ngModel)]="special!.instruction7" type="text" name="instruction7" id="instruction7" placeholder="Instruction 7:">
+  <input [(ngModel)]="special!.garnish" type="text" name="garnish" id="garnish" placeholder="Garnish:">
+  <input [(ngModel)]="special!.imageurl" type="text" name="imageurl" id="imageurl" placeholder="Image URL:">
+  <input type="submit" name="edit" id="edit" value="Update Drink">
+
+</form>
 
 <app-specials-info
-[name]="special?.name"
-[imageurl]="special?.imageurl"
-[glass]="special?.glass"
-[ingredient1]="special?.ingredient1"
-[ingredient2]="special?.ingredient2"
-[ingredient3]="special?.ingredient3"
-[ingredient4]="special?.ingredient4"
-[ingredient5]="special?.ingredient5"
-[ingredient6]="special?.ingredient6"
-[topper]="special?.topper"
-[instruction1]="special?.instruction1"
-[instruction2]="special?.instruction2"
-[instruction3]="special?.instruction3"
-[instruction4]="special?.instruction4"
-[instruction5]="special?.instruction5"
-[instruction6]="special?.instruction6"
-[instruction7]="special?.instruction7"
-[garnish]="special?.garnish"
+[name]="special!.name"
+[imageurl]="special!.imageurl"
+[glass]="special!.glass"
+[ingredient1]="special!.ingredient1"
+[ingredient2]="special!.ingredient2"
+[ingredient3]="special!.ingredient3"
+[ingredient4]="special!.ingredient4"
+[ingredient5]="special!.ingredient5"
+[ingredient6]="special!.ingredient6"
+[topper]="special!.topper"
+[instruction1]="special!.instruction1"
+[instruction2]="special!.instruction2"
+[instruction3]="special!.instruction3"
+[instruction4]="special!.instruction4"
+[instruction5]="special!.instruction5"
+[instruction6]="special!.instruction6"
+[instruction7]="special!.instruction7"
+[garnish]="special!.garnish"
 ></app-specials-info>

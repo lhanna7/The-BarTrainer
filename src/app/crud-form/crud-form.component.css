@@ -21,14 +21,33 @@
   }
 }
 
-form {
-  margin-top: 10%;
+h3 {
+  font-family: 'Josefin Sans', sans-serif;
   background-color: rgb(38, 38, 38);
   text-align: center;
+  color: rgb(196, 196, 196);
+  text-shadow: 0 0 10px rgb(233, 192, 109);
+  font-size: 150%;
 }
 
 @media only screen and (max-width: 700px) {
-  form{
+  h3 {
+    margin-top: 20%;
+    background-color: rgb(19, 19, 19);
+  }
+}
+
+form {
+  margin: 1% 1% 0% 1%;
+  background-color: rgb(38, 38, 38);
+  text-align: center;
+  padding-bottom: 3%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 700px) {
+  form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -40,13 +59,15 @@ form {
 
 input {
   height: fit-content;
-  margin-top: 4%;
+  margin: 4% 2% 0% 5%;
   padding: 3%;
   border-top: solid 1px rgb(233, 192, 109);
   border-left: solid 1px rgb(233, 192, 109);
   border-right: solid 1px rgb(127, 90, 43);
   border-bottom: solid 1px rgb(127, 90, 43);
   text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 100%;
 }
 
 
@@ -56,8 +77,18 @@ input {
   text-align: center;
 }
 
-#add,
-#remove,
-#edit {
+#add {
+  display: block;
   cursor: pointer;
+  margin-left: 25%;
+  background-color: rgb(83, 68, 38);
+  color: rgb(19, 19, 19);
+  font-weight: bolder;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  transition: 1s;
+}
+
+#add:hover {
+  background-color: rgb(179, 138, 58);
 }

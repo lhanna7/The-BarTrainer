@@ -1,28 +1,27 @@
 
 <div class="crud-bar">
-  <form>
-    <input type="text" name="id" id="id" placeholder="ID:">
-    <input type="text" name="name" id="name" placeholder="Name:">
-    <input type="text" name="glass" id="glass" placeholder="Glass:">
-    <input type="text" name="method" id="method" placeholder="Method:">
-    <input type="text" name="ingredient1" id="ingredient1" placeholder="Ingredient 1:">
-    <input type="text" name="ingredient2" id="ingredient2" placeholder="Ingredient 2:">
-    <input type="text" name="ingredient3" id="ingredient3" placeholder="Ingredient 3:">
-    <input type="text" name="ingredient4" id="ingredient4" placeholder="Ingredient 4:">
-    <input type="text" name="ingredient5" id="ingredient5" placeholder="Ingredient 5:">
-    <input type="text" name="ingredient6" id="ingredient6" placeholder="Ingredient 6:">
-    <input type="text" name="topper" id="topper" placeholder="Top With:">
-    <input type="text" name="instruction1" id="instruction1" placeholder="Instruction 1:">
-    <input type="text" name="instruction2" id="instruction2" placeholder="Instruction 2:">
-    <input type="text" name="instruction3" id="instruction3" placeholder="Instruction 3:">
-    <input type="text" name="instruction4" id="instruction4" placeholder="Instruction 4:">
-    <input type="text" name="instruction5" id="instruction5" placeholder="Instruction 5:">
-    <input type="text" name="instruction6" id="instruction6" placeholder="Instruction 6:">
-    <input type="text" name="instruction7" id="instruction7" placeholder="Instruction 7:">
-    <input type="text" name="garnish" id="garnish" placeholder="Garnish:">
-    <input type="text" name="imageurl" id="imageurl" placeholder="Image URL:">
+  <h3>Add New Special Here:</h3>
+  <form #newSpecialForm="ngForm" (ngSubmit)="addSpecial(newSpecialForm.value)">
+    <input ngModel type="text" name="id" id="id" placeholder="ID:">
+    <input ngModel type="text" name="name" id="name" placeholder="Name:">
+    <input ngModel type="text" name="glass" id="glass" placeholder="Glass:">
+    <input ngModel type="text" name="method" id="method" placeholder="Method:">
+    <input ngModel type="text" name="ingredient1" id="ingredient1" placeholder="Ingredient 1:">
+    <input ngModel type="text" name="ingredient2" id="ingredient2" placeholder="Ingredient 2:">
+    <input ngModel type="text" name="ingredient3" id="ingredient3" placeholder="Ingredient 3:">
+    <input ngModel type="text" name="ingredient4" id="ingredient4" placeholder="Ingredient 4:">
+    <input ngModel type="text" name="ingredient5" id="ingredient5" placeholder="Ingredient 5:">
+    <input ngModel type="text" name="ingredient6" id="ingredient6" placeholder="Ingredient 6:">
+    <input ngModel type="text" name="topper" id="topper" placeholder="Top With:">
+    <input ngModel type="text" name="instruction1" id="instruction1" placeholder="Instruction 1:">
+    <input ngModel type="text" name="instruction2" id="instruction2" placeholder="Instruction 2:">
+    <input ngModel type="text" name="instruction3" id="instruction3" placeholder="Instruction 3:">
+    <input ngModel type="text" name="instruction4" id="instruction4" placeholder="Instruction 4:">
+    <input ngModel type="text" name="instruction5" id="instruction5" placeholder="Instruction 5:">
+    <input ngModel type="text" name="instruction6" id="instruction6" placeholder="Instruction 6:">
+    <input ngModel type="text" name="instruction7" id="instruction7" placeholder="Instruction 7:">
+    <input ngModel type="text" name="garnish" id="garnish" placeholder="Garnish:">
+    <input ngModel type="text" name="imageurl" id="imageurl" placeholder="Image URL:">
     <input type="submit" name="add" id="add" value="Add Drink">
-    <input type="submit" name="remove" id="remove" value="Remove Drink">
-    <input type="submit" name="edit" id="edit" value="Edit Drink">
   </form>
 </div>

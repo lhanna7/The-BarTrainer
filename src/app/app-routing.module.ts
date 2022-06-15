@@ -1,4 +1,5 @@
 import { Component, NgModule } from '@angular/core';
+import { ModuleWithProviders } from "@angular/core";
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { LandingPageSearchDrinkComponent } from './landing-page-search-drink/landing-page-search-drink.component';

@@ -10,13 +10,24 @@ import { Special } from '../models/Drink';
 })
 export class SpecialsResultsComponent implements OnInit {
   special?: Special
+  edit: boolean = false;
 
   constructor(private route: ActivatedRoute, private drinkService: DrinkService) {}
 
   name = String(this.route.snapshot.paramMap.get("name"));
 
   ngOnInit () {
-    this.drinkService.fetchSpecialsByName(this.name).subscribe(response =>
-    this.special = response)
+    this.drinkService.betterFetchByName(this.name).subscribe(response =>
+    this.special = response);
+
+  }
+
+  toggleEditVisibility() {
+    this.edit = !this.edit;
+  }
+
+  editSpecial() {
+      console.log("hello there")
+    this.toggleEditVisibility()
   }
 }
