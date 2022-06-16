@@ -1,10 +1,11 @@
 <div class="button">
   <a routerLink="/view-specials">Back</a>
-  <button *ngIf="!edit" (click)="toggleEditVisibility()">Edit</button>
+  <button *ngIf="!edit" (click)="toggleEditVisibility()" class="edit-button">Edit</button>
+  <button *ngIf="edit" (click)="deleteSpecial()" class="delete-button">Delete</button>
 </div>
 
-<form *ngIf="edit" #editSpecialForm="ngForm" (ngSubmit)="editSpecial()">
-  <input [(ngModel)]="name" type="text" name="name" id="name" placeholder="Name:">
+<form *ngIf="edit" #editSpecialForm="ngForm" (ngSubmit)="editSpecial(editSpecialForm.value)">
+  <input [(ngModel)]="special!.name" type="text" name="name" id="name" placeholder="Name:">
   <input [(ngModel)]="special!.glass" type="text" name="glass" id="glass" placeholder="Glass:">
   <input [(ngModel)]="special!.method" type="text" name="method" id="method" placeholder="Method:">
   <input [(ngModel)]="special!.ingredient1" type="text" name="ingredient1" id="ingredient1" placeholder="Ingredient 1:">

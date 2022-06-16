@@ -15,8 +15,12 @@ export class CrudFormComponent {
 
   addSpecial(newSpecial: Special) {
     return this.drinkService.addSpecial(newSpecial).subscribe(response => {
-      this.specials = [response.drink, ...this.specials]
+      this.specials = [...this.specials, response.drink]
     })
+  }
+
+  reload() {
+    window.location.reload()
   }
 
 }

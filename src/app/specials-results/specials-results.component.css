@@ -10,13 +10,16 @@ a {
 }
 
 a:hover {
-  box-shadow: 8px 10px 10px 5px rgb(211, 173, 99);
+  background-color: rgb(211, 173, 99);
+  color: rgb(39, 39, 39);
 }
 
 .button {
-  margin: 5% 0% 0% 30%;
+  margin: 5% 0% 0% 20%;
   font-size: 110%;
   font-weight: bolder;
+  display: flex;
+  justify-content: space-around;
 
 }
 
@@ -36,8 +39,59 @@ form {
 input {
   margin: 2%;
   padding: 2%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 90%;
+  border-top: solid 1px rgb(233, 192, 109);
+  border-left: solid 1px rgb(233, 192, 109);
+  border-right: solid 1px rgb(127, 90, 43);
+  border-bottom: solid 1px rgb(127, 90, 43);
+  text-align: center;
+  color: rgb(211, 173, 99);
+  box-shadow: 8px 15px 25px 5px rgb(0, 0, 0);
 }
 
-#edit {
-  display: block;
+::placeholder {
+  color: rgb(196, 196, 196);
+}
+
+
+.edit-button, #edit {
+  background-color: rgb(39, 39, 39);
+  padding: 2%;
+  text-decoration: none;
+  border-radius: 5%;
+  border: none;
+  box-shadow: 8px 15px 25px 5px rgb(0, 0, 0);
+  transition: 1s;
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(211, 173, 99);
+  font-size: 100%;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.edit-button:hover,
+#edit:hover {
+  background-color: rgb(211, 173, 99);
+  color: rgb(39, 39, 39);
+}
+
+.delete-button {
+  background-color: rgb(39, 39, 39);
+  padding: 2%;
+  text-decoration: none;
+  border-radius: 5%;
+  border: none;
+  box-shadow: 8px 15px 25px 5px rgb(0, 0, 0);
+  transition: 1s;
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(211, 173, 99);
+  font-size: 100%;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: rgb(121, 54, 54);
+  color: rgb(15, 15, 15);
 }

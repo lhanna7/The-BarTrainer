@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DrinkService } from '../drink.service';
 import { Special } from '../models/Drink';
 
@@ -11,23 +11,34 @@ import { Special } from '../models/Drink';
 export class SpecialsResultsComponent implements OnInit {
   special?: Special
   edit: boolean = false;
+  name!: string;
+  router: Router;
 
-  constructor(private route: ActivatedRoute, private drinkService: DrinkService) {}
-
-  name = String(this.route.snapshot.paramMap.get("name"));
+  constructor(
+    private route: ActivatedRoute,
+    private drinkService: DrinkService,
+    router: Router) {
+      this.router = router;
+    }
 
   ngOnInit () {
+    console.log(this.name)
+    this.name = String(this.route.snapshot.paramMap.get("name"));
     this.drinkService.betterFetchByName(this.name).subscribe(response =>
     this.special = response);
-
   }
 
   toggleEditVisibility() {
     this.edit = !this.edit;
   }
 
-  editSpecial() {
-      console.log("hello there")
+  editSpecial(updatedSpecial: Special) {
+    this.drinkService.editSpecial(updatedSpecial).subscribe;
     this.toggleEditVisibility()
+  }
+
+  deleteSpecial() {
+    this.drinkService.deleteSpecial(this.special!);
+    this.router.navigate(['/view-specials']).then(() => {window.location.reload()})
   }
 }

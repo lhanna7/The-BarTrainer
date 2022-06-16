@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-specials-info',
@@ -6,29 +6,25 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./specials-info.component.css']
 })
 
-export class SpecialsInfoComponent implements OnInit {
-  @Input() id!: any;
-  @Input() name!: any;
-  @Input() glass!: any;
-  @Input() method!: any;
-  @Input() ingredient1!: any;
-  @Input() ingredient2!: any;
-  @Input() ingredient3!: any;
-  @Input() ingredient4!: any;
-  @Input() ingredient5!: any;
-  @Input() ingredient6!: any;
-  @Input() topper!: any;
-  @Input() instruction1!: any;
-  @Input() instruction2!: any;
-  @Input() instruction3!: any;
-  @Input() instruction4!: any;
-  @Input() instruction5!: any;
-  @Input() instruction6!: any;
-  @Input() instruction7!: any;
-  @Input() garnish!: any;
-  @Input() imageurl!: any;
-
-  ngOnInit() {
-
-  }
+export class SpecialsInfoComponent {
+  @Input() id!: number;
+  @Input() name!: string;
+  @Input() glass!: string;
+  @Input() method!: string;
+  @Input() ingredient1!: string;
+  @Input() ingredient2!: string;
+  @Input() ingredient3!: string;
+  @Input() ingredient4!: string;
+  @Input() ingredient5!: string;
+  @Input() ingredient6!: string;
+  @Input() topper!: string;
+  @Input() instruction1!: string;
+  @Input() instruction2!: string;
+  @Input() instruction3!: string;
+  @Input() instruction4!: string;
+  @Input() instruction5!: string;
+  @Input() instruction6!: string;
+  @Input() instruction7!: string;
+  @Input() garnish!: string;
+  @Input() imageurl!: string;
 }

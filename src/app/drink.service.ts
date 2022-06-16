@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Drink, Special } from './models/Drink';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { map, Observable } from 'rxjs';
+import { map } from 'rxjs';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -35,13 +35,6 @@ fetchSpecials() {
   return this.http.get<SpecialResponse>(`https://bartrainer-cocktails.herokuapp.com/api/drinks`)
 }
 
-// fetchSpecialsByName(name: string): Observable<Special | undefined> {
-//   return this.fetchSpecials().pipe(
-//     map((response) => response.drinks
-//     .find((drink) => drink.name === name))
-//   )
-// }
-
 betterFetchByName(name: string) {
   return this.fetchSpecials().pipe(
     map((response) =>
@@ -59,7 +52,12 @@ addSpecial(newSpecial: Special) {
 }
 
 editSpecial(updatedSpecial: Special) {
-  return this.http.put<SingleSpecialResponse>(`https://bartrainer-cocktails.herokuapp.com/api/drinks`, updatedSpecial, httpOptions)
+  return this.http.put<SingleSpecialResponse>(`https://bartrainer-cocktails.herokuapp.com/api/drinks/${updatedSpecial.name}`, updatedSpecial, httpOptions)
+}
+
+deleteSpecial(special: Special) {
+  console.log(special.name)
+  return this.http.delete<SingleSpecialResponse>(`https://bartrainer-cocktails.herokuapp.com/api/drinks/${special.name}`).subscribe
 }
 }
 
