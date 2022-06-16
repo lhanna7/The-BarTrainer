@@ -1,7 +1,7 @@
 
 <div class="crud-bar">
   <h3>Add New Special Here:</h3>
-  <form #newSpecialForm="ngForm" (ngSubmit)="addSpecial(newSpecialForm.value)" (ngSubmit)="reload()">
+  <form #newSpecialForm="ngForm" (ngSubmit)="addSpecial(newSpecialForm.value)" (ngSubmit)="reload()" >
     <input ngModel type="text" name="id" id="id" placeholder="ID:">
     <input ngModel type="text" name="name" id="name" placeholder="Name:">
     <input ngModel type="text" name="glass" id="glass" placeholder="Glass:">

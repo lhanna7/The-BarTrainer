@@ -1,7 +1,7 @@
 <div class="button">
   <a routerLink="/view-specials">Back</a>
   <button *ngIf="!edit" (click)="toggleEditVisibility()" class="edit-button">Edit</button>
-  <button *ngIf="edit" (click)="deleteSpecial()" class="delete-button">Delete</button>
+  <button *ngIf="edit" (click)="deleteSpecial(special!.id)" class="delete-button">Delete</button>
 </div>
 
 <form *ngIf="edit" #editSpecialForm="ngForm" (ngSubmit)="editSpecial(editSpecialForm.value)">

@@ -37,8 +37,8 @@ export class SpecialsResultsComponent implements OnInit {
     this.toggleEditVisibility()
   }
 
-  deleteSpecial() {
-    this.drinkService.deleteSpecial(this.special!);
+  deleteSpecial(id: number) {
+    this.drinkService.deleteSpecial(id);
     this.router.navigate(['/view-specials']).then(() => {window.location.reload()})
   }
 }

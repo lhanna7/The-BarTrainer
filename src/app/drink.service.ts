@@ -25,6 +25,7 @@ export type SingleSpecialResponse = {
   drink: Special
 }
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -59,9 +60,8 @@ editSpecial(updatedSpecial: Special) {
   return this.http.put<SingleSpecialResponse>(`${specialsEndpoint}/${updatedSpecial.id}`, updatedSpecial, httpOptions).subscribe()
 }
 
-deleteSpecial(special: Special) {
-  console.log(special.name)
-  return this.http.delete<SingleSpecialResponse>(`${specialsEndpoint}/${special.id}`).subscribe
+deleteSpecial(id: number) {
+  return this.http.delete<Special>(`${specialsEndpoint}/${id}`).subscribe()
 }
 }
 
