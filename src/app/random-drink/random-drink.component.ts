@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { DrinkService } from '../drink.service';
 import { Drink } from '../models/Drink';
 
@@ -11,10 +10,10 @@ import { Drink } from '../models/Drink';
 export class RandomDrinkComponent implements OnInit{
   results: Drink[] = []
 
-  constructor(private route: ActivatedRoute, private drinkService: DrinkService) {}
+  constructor(private drinkService: DrinkService) {}
 
   ngOnInit() {
       this.drinkService.fetchRandom().subscribe(response =>
-        console.log(this.results = response.drinks))
+      this.results = response.drinks)
   }
 }

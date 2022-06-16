@@ -5,6 +5,7 @@
 </div>
 
 <form *ngIf="edit" #editSpecialForm="ngForm" (ngSubmit)="editSpecial(editSpecialForm.value)">
+  <input [(ngModel)]="special!.id" type="text" name="id" id="id" placeholder="id:">
   <input [(ngModel)]="special!.name" type="text" name="name" id="name" placeholder="Name:">
   <input [(ngModel)]="special!.glass" type="text" name="glass" id="glass" placeholder="Glass:">
   <input [(ngModel)]="special!.method" type="text" name="method" id="method" placeholder="Method:">
@@ -29,6 +30,7 @@
 </form>
 
 <app-specials-info
+[id]="special!.id"
 [name]="special!.name"
 [imageurl]="special!.imageurl"
 [glass]="special!.glass"

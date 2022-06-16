@@ -33,7 +33,7 @@ export class SpecialsResultsComponent implements OnInit {
   }
 
   editSpecial(updatedSpecial: Special) {
-    this.drinkService.editSpecial(updatedSpecial).subscribe;
+    this.drinkService.editSpecial(updatedSpecial);
     this.toggleEditVisibility()
   }
 

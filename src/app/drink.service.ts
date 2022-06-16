@@ -2,12 +2,16 @@ import { Injectable } from '@angular/core';
 import { Drink, Special } from './models/Drink';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json'
   })
 }
+
+const cocktailDbEndpoint = `${environment.thirdPartyApiUrl}`;
+const specialsEndpoint = `${environment.baseApiUrl}`
 
 type DrinkResponse = {
   drinks: Drink[];
@@ -28,11 +32,11 @@ export class DrinkService {
 constructor(private http: HttpClient) {}
 
 search(searchTerm: string) {
-  return this.http.get<DrinkResponse>(`https://www.thecocktaildb.com/api/json/v2/9973533/search.php?s=${searchTerm}`)
+  return this.http.get<DrinkResponse>(`${cocktailDbEndpoint}/search.php?s=${searchTerm}`)
 }
 
 fetchSpecials() {
-  return this.http.get<SpecialResponse>(`https://bartrainer-cocktails.herokuapp.com/api/drinks`)
+  return this.http.get<SpecialResponse>(`${specialsEndpoint}`)
 }
 
 betterFetchByName(name: string) {
@@ -44,20 +48,20 @@ betterFetchByName(name: string) {
 }
 
 fetchRandom() {
-  return this.http.get<DrinkResponse>(`https://www.thecocktaildb.com/api/json/v2/9973533/random.php`)
+  return this.http.get<DrinkResponse>(`${cocktailDbEndpoint}/random.php`)
 }
 
 addSpecial(newSpecial: Special) {
-  return this.http.post<SingleSpecialResponse>(`https://bartrainer-cocktails.herokuapp.com/api/drinks`, newSpecial, httpOptions)
+  return this.http.post<SingleSpecialResponse>(`${specialsEndpoint}`, newSpecial, httpOptions)
 }
 
 editSpecial(updatedSpecial: Special) {
-  return this.http.put<SingleSpecialResponse>(`https://bartrainer-cocktails.herokuapp.com/api/drinks/${updatedSpecial.name}`, updatedSpecial, httpOptions)
+  return this.http.put<SingleSpecialResponse>(`${specialsEndpoint}/${updatedSpecial.id}`, updatedSpecial, httpOptions).subscribe()
 }
 
 deleteSpecial(special: Special) {
   console.log(special.name)
-  return this.http.delete<SingleSpecialResponse>(`https://bartrainer-cocktails.herokuapp.com/api/drinks/${special.name}`).subscribe
+  return this.http.delete<SingleSpecialResponse>(`${specialsEndpoint}/${special.id}`).subscribe
 }
 }
 
