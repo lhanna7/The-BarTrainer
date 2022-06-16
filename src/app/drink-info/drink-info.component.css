@@ -7,6 +7,11 @@ ul {
 img {
   width: 100%;
   margin-left: 8%;
+  border-radius: 5%;
+  border-top: solid 2px rgb(233, 192, 109);
+  border-left: solid 2px rgb(233, 192, 109);
+  border-right: solid 2px rgb(127, 90, 43);
+  border-bottom: solid 2px rgb(127, 90, 43);
 }
 
 @media only screen and (max-width: 700px) {
@@ -18,7 +23,6 @@ img {
 
 
 p, li {
-  font-size: 100%;
   background-color: rgb(38, 38, 38);
   font-family: 'Josefin Sans', sans-serif;
   color: rgb(201, 184, 152);
@@ -33,6 +37,11 @@ p, li {
 
 p {
   margin-left: 8%;
+  font-size: 150%;
+}
+
+li {
+  font-size: 150%;
 }
 
 
@@ -44,7 +53,7 @@ h2, h3, span {
 
 h2 {
   text-align: center;
-  font-size: 200%;
+  font-size: 240%;
 }
 
 @media only screen and (max-width: 700px) {
