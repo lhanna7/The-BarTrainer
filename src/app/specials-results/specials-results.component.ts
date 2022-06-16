@@ -22,7 +22,6 @@ export class SpecialsResultsComponent implements OnInit {
     }
 
   ngOnInit () {
-    console.log(this.name)
     this.name = String(this.route.snapshot.paramMap.get("name"));
     this.drinkService.betterFetchByName(this.name).subscribe(response =>
     this.special = response);
