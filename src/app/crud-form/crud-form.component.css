@@ -80,7 +80,7 @@ input {
 #add {
   display: block;
   cursor: pointer;
-  margin-left: 25%;
+  margin-left: 14%;
   background-color: rgb(83, 68, 38);
   color: rgb(19, 19, 19);
   font-weight: bolder;
@@ -91,4 +91,8 @@ input {
 
 #add:hover {
   background-color: rgb(179, 138, 58);
+}
+
+#id {
+  display: none;
 }
